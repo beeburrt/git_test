@@ -1,10 +1,9 @@
-# git_test
+# ~~git_test~~ 
+My original, numero uno, very first ever repo has been repurposed :recycle:
 
-I should be in bed by now
+Now it's my:
+# Landing Page 
+assignment for **The Odin Project**
 
-Hello Odin! (you jerks! lol, just kidding)
 
-I'm learning stuff!!
-
-just checking
 
