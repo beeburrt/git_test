@@ -59,19 +59,24 @@ body {
   display: flex;
   font-family: 'Roboto', sans-serif;
   flex-direction: column;
-  flex: 1;
 }
 
 .header {
   background-color: #1f2937;
   display: flex;
   padding: 22px 66px;
+  flex: 1;
 }
 
 .bike {
-  width: 44px;
+  width: auto;
+  height: auto;
   margin: 0;
   border: 2px solid black;
+}
+
+.list {
+  flex-direction: row;
 }
 
 a {
@@ -81,11 +86,14 @@ a {
 }
 
 .hero {
+  color: white;
+  background-color: #1f2937;
   display: flex;
+  flex-flow: column wrap;
 }
 
 .title {
-
+  font-size: 44px;
 }
 
 .ghost {
@@ -94,6 +102,8 @@ a {
 }
 
 .button {
+  width: 111px;
+  color: white;
   background-color: #3882f6;
   padding: 8px;
   border-radius: 6px;
@@ -101,6 +111,7 @@ a {
 }
 
 .cards {
+  font-size: 33px;
   height: 333px;
 }
 
@@ -126,6 +137,7 @@ blockquote {
   color: #e5e7eb;
   background-color: #1f2937;
   padding: 22px 22px;
+  flex-wrap: wrap;
 }
 
 a:hover {
