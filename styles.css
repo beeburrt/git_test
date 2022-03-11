@@ -111,8 +111,24 @@ a {
 }
 
 .cards {
+  display: flex;
   font-size: 33px;
+  min-height: 388px;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.random {
+  display: flex;
+  border: 2px solid black;
+}
+
+.card {
+  max-width: 222px;
   height: 333px;
+  border: 2px solid black;
+  flex: 1 0 100%;
+  align-items: flex-end;
 }
 
 .quote {
