@@ -51,19 +51,83 @@ table {
 
 /*
 ==================================
-Reset End
-Header/Hero
+End of Reset
 ==================================
 */
+
+body {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  flex-direction: column;
+  flex: 1;
+}
 
 .header {
   background-color: #1f2937;
   display: flex;
-  margin: auto;
+  padding: 22px 66px;
 }
 
+.bike {
+  width: 44px;
+  margin: 0;
+  border: 2px solid black;
+}
 
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+}
 
-img {
+.hero {
+  display: flex;
+}
+
+.title {
+
+}
+
+.ghost {
   width: 300px;
+  border-radius: 22px;
+}
+
+.button {
+  background-color: #3882f6;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 22px;
+}
+
+.cards {
+  height: 333px;
+}
+
+.quote {
+  background-color: #e5e7eb;
+  height: 222px;
+  padding: 88px 0;
+  font: italic 100 33px Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+blockquote {
+}
+
+.quote p.cite {
+  font: normal bold 20px Roboto, sans-serif;
+  text-align: end;
+}
+
+.footer {
+  color: #e5e7eb;
+  background-color: #1f2937;
+  padding: 22px 22px;
+}
+
+a:hover {
+  color: #3882f6;
 }
