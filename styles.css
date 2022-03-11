@@ -69,14 +69,22 @@ body {
 }
 
 .bike {
-  width: auto;
-  height: auto;
+  width: 44px;
+  height: 44px;
   margin: 0;
   border: 2px solid black;
 }
 
 .list {
+  display: flex;
   flex-direction: row;
+}
+
+.link {
+  margin: 11px;
+  align-items: flex-end;
+  border: 2px solid black;
+
 }
 
 a {
@@ -115,18 +123,23 @@ a {
   font-size: 33px;
   min-height: 388px;
   flex-flow: row wrap;
+  justify-content: space-around;
   text-align: center;
 }
 
 .random {
+  padding: 44px;
   display: flex;
-  border: 2px solid black;
+  width: 100%;
+  justify-content: center;
 }
 
 .card {
+  margin: 22px 22px;
   max-width: 222px;
   height: 333px;
   border: 2px solid black;
+  border-radius: 33px;
   flex: 1 0 100%;
   align-items: flex-end;
 }
