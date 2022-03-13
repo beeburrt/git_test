@@ -96,6 +96,7 @@ body {
 .list li {
   display: flex;
   align-self: flex-end;
+  flex: 1 1 100%;
 }
 
 .link {
@@ -127,7 +128,7 @@ body {
 .button {
   width: 111px;
   color: white;
-  background-color: #1750ac;
+  background-color: #3882f6;
   padding: 8px;
   border-radius: 6px;
   margin: 22px;
@@ -183,7 +184,7 @@ a:focus {
 }
 
 .card {
-  background-color: black;
+  background-color: white;
   display: flex;
   margin: 22px 22px;
   max-width: 222px;
@@ -191,7 +192,7 @@ a:focus {
   border-radius: 33px;
   flex: 1 0 100%;
   align-items: center;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, .6);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .4);
   justify-content: center;
   border-collapse: collapse;
 }
@@ -202,7 +203,7 @@ a:focus {
   border-radius: 33px;
 }
 
-.card:hover {
+.card img:hover {
   color: green;
   height: auto;
   width: 211px;
@@ -222,7 +223,7 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
 }
 
 blockquote {
@@ -236,6 +237,31 @@ blockquote {
   text-align: end;
   margin: 12px 22px 0 0;
 }
+
+
+/* =====================
+    Call to Action
+===================== */
+
+.call {
+  display: flex;
+  height: 18em;
+}
+
+.call-to-action {
+  background: #3882f6;
+  color: white;
+  height: 11em;
+  width: 75%;
+  margin: 55px auto;
+}
+
+.its-time {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+
 
 /* =====================
     Footer
