@@ -61,6 +61,10 @@ body {
   box-sizing: border-box;
 }
 
+/* ======================
+  Header
+======================= */
+
 .header {
   background-color: #1f2937;
   display: flex;
@@ -99,10 +103,12 @@ a {
   background-color: #1f2937;
   display: flex;
   flex-flow: column wrap;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
 }
 
 .title {
   font-size: 44px;
+  text-transform: uppercase;
 }
 
 .ghost {
@@ -119,12 +125,18 @@ a {
   margin: 22px;
 }
 
+/* =====================
+    Card Section
+===================== */
+
 .cards {
   display: flex;
   font-size: 33px;
+  font-weight: bold;
   min-height: 388px;
+  width: 100%;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
 }
 
@@ -133,37 +145,70 @@ a {
   display: flex;
   width: 100%;
   justify-content: center;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .card {
+  background-color: black;
+  display: flex;
   margin: 22px 22px;
   max-width: 222px;
   height: 333px;
   border-radius: 33px;
   flex: 1 0 100%;
-  align-items: flex-end;
-  box-shadow: 1px 1px .8em rgba(0, 0, 0, 0.4);
+  align-items: center;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  border-collapse: collapse;
 }
+
+.card img {
+  width: 222px;
+  height: auto;
+  border-radius: 33px;
+}
+
+.card:hover {
+  color: green;
+  height: auto;
+  width: 211px;
+  border-radius: 33px;
+}
+
+/* =====================
+    Quote Section
+===================== */
 
 .quote {
   background-color: #e5e7eb;
   height: 222px;
   padding: 88px 0;
   font: italic 100 33px Roboto, sans-serif;
+  margin-top: 33px;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 1rem .6rem rgba(0, 0, 0, 0.2);
+
 }
 
 blockquote {
-  padding-left: 33px;
+  padding: 0 33px;
+  border: 2px solid black;
+  max-width: 33rem;
+  margin: 0 auto;
 }
 
 .quote p.cite {
   font: normal bold 22px Roboto, sans-serif;
   text-align: end;
-  padding: 12px 22px;
+  padding: 11px 22px;
 }
+
+/* =====================
+    Footer
+===================== */
 
 .footer {
   color: #e5e7eb;
