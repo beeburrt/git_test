@@ -36,14 +36,14 @@ body {
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
+/* blockquote, q { 
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
-}
+} */
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -54,8 +54,19 @@ table {
 ==================================
 */
 
+@font-face {
+  font-display: swap;
+  font-family: CCSymbols;
+  font-synthesis: none;
+  src: url(CCSymbols.woff2) format(woff2),
+       url(CCSymbols.woff)  format(woff);
+  unicode-range: u+a9, u+229c,
+                 u+1f10d-1f10f,
+                 u+1f16d-1f16f;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif, 'CCSymbols';
   box-sizing: border-box;
 }
 
@@ -142,6 +153,11 @@ a:hover {
   color: #3882f6;
 }
 
+a:focus {
+  text-decoration: underline;
+  color: #3882f6;
+}
+
 /* =====================
     Card Section
 ===================== */
@@ -211,7 +227,6 @@ a:hover {
 
 blockquote {
   padding: 0 33px;
-  border: 2px solid black;
   max-width: 33rem;
   margin: 0 auto;
 }
@@ -219,7 +234,7 @@ blockquote {
 .quote p.cite {
   font: normal bold 22px Roboto, sans-serif;
   text-align: end;
-  padding: 11px 22px;
+  margin: 12px 22px 0 0;
 }
 
 /* =====================
@@ -233,3 +248,21 @@ blockquote {
   flex-wrap: wrap;
 }
 
+.copy-left {
+  display: inline-block;
+  text-align: right;
+  margin: 0px;
+ transform: scaleX(-1);
+}
+
+.creative-commons{
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-radius: 1em;
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+  line-height: 2em;
+  text-align: center;
+  font-size: 1em;
+ }
