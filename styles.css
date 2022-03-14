@@ -54,37 +54,31 @@ table {
 ==================================
 */
 
-@font-face {
-  font-display: swap;
-  font-family: CCSymbols;
-  font-synthesis: none;
-  src: url(CCSymbols.woff2) format(woff2),
-       url(CCSymbols.woff)  format(woff);
-  unicode-range: u+a9, u+229c,
-                 u+1f10d-1f10f,
-                 u+1f16d-1f16f;
-}
-
 body {
-  font-family: 'Roboto', sans-serif, 'CCSymbols';
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 /* ======================
   Header
 ======================= */
 
-.header {
+.hero {
+  color: white;
   background-color: #1f2937;
   display: flex;
-  padding: 22px 66px;
-  flex: 1 1 100%;
+  padding: 22px 33px;
   border: 2px solid black;
+  flex-wrap: wrap;
+}
 
+.header {
+  display: flex;
 }
 
 .bike {
-  width: 55px;
+  width: 44px;
   margin-right: auto;
   border: 2px solid black;
 }
@@ -93,24 +87,24 @@ body {
   display: flex;
 }
 
-.list li {
-  display: flex;
-  align-self: flex-end;
-  flex: 1 1 100%;
-}
-
 .link {
+  display: flex;
   margin: 11px;
   align-items: flex-end;
   border: 2px solid black;
 }
 
-.hero {
-  color: white;
-  background-color: #1f2937;
+.text {
   display: flex;
-  flex-flow: column wrap;
-  align-items: end;
+  flex-wrap: wrap;
+  line-height: 1.5;
+  border: 2px solid black;
+  align-items: center;
+}
+
+.photo {
+  max-width: 50%;
+  margin: 44px;
 }
 
 .title {
@@ -119,10 +113,15 @@ body {
   font-weight: 700;
 }
 
-.ghost {
-  width: 300px;
-  border-radius: 22px;
+.words {
+  border: 2px solid black;
+}
 
+.chrome {
+  display: flex;
+  max-width: 100%;
+  border-radius: 22px;
+  /* object-fit: contain; */
 }
 
 .button {
@@ -132,7 +131,7 @@ body {
   padding: 8px;
   border-radius: 6px;
   margin: 22px;
-  align-self: flex-start;
+  border: 2px solid black;
 }
 
 /* ======================
@@ -145,7 +144,7 @@ a {
   font-size: 22px;
 }
 
-.hero a {
+.words a {
   font-size: inherit;
   text-decoration: underline;
 }
@@ -172,6 +171,7 @@ a:focus {
   flex-flow: row wrap;
   justify-content: center;
   text-align: center;
+  line-height: 1.1;
 }
 
 .random {
