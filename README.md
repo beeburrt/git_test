@@ -9,4 +9,7 @@ assignment for [**The Odin Project**](https://theodinproject.com)
 (also for my ongoing Git-learning)
 
 
+I know exactly zero concerning CSS grid, for now
+
+So I made this page strictly with flexbox (which still confuses me)
 

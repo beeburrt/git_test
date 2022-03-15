@@ -135,13 +135,15 @@ body {
 }
 
 .button {
-  width: 111px;
+  width: 8em;
   color: white;
+  font-size: inherit;
   background-color: #3882f6;
   padding: 8px;
   border-radius: 6px;
   margin: 22px;
   border: 2px solid black;
+  text-shadow: 1px 1px 2px black;
 }
 
 /* ======================
@@ -228,7 +230,7 @@ a:focus {
   background-color: #e5e7eb;
   height: 222px;
   padding: 88px 0;
-  font: italic 100 33px Roboto, sans-serif;
+  font: italic 100 2.3em Roboto, sans-serif;
   margin-top: 33px;
   display: flex;
   justify-content: center;
@@ -254,18 +256,25 @@ blockquote {
 ===================== */
 
 .call {
-  /* display: flex; */
+  display: flex;
   height: 18em;
   text-shadow: 1px 1px 2px black;
-  
+  justify-content: center;
+  align-items: center;
 }
 
 .call-to-action {
   background: #3882f6;
   color: white;
-  height: 11em;
   width: 75%;
-  margin: 55px auto;
+  padding: 1em 0 1em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.why {
+  /* width: 60%; */
 }
 
 .its-time {
@@ -275,7 +284,26 @@ blockquote {
 }
 
 .sign-up {
-  font-size: 1.5em;
+  font-size: 1.3em;
+  line-height: 1.2;
+}
+
+.btn-div {
+  margin-right: 1em;
+  border: 1px solid #1f2937;
+
+}
+
+.btn {
+  width: 7em;
+  color: black;
+  background-color: #e5e7eb;
+  font-size: inherit;
+  font-weight: 700;
+  padding: 8px;
+  border-radius: 6px;
+  /* margin: 22px; */
+  border: 1px solid #1f2937;
 }
 
 /* =====================
@@ -283,9 +311,9 @@ blockquote {
 ===================== */
 
 .footer {
-  color: #e5e7eb;
+  color: white;
   background-color: #1f2937;
-  padding: 22px;
+  padding: 1.6em;
 }
 
 /* This code below is for the creative commons symbol
@@ -297,7 +325,7 @@ blockquote {
   display: inline-block;
   text-align: right;
   margin: 0px;
- transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .creative-commons{
