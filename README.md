@@ -7,12 +7,8 @@ So now this is my:
 # Landing Page 
 assignment for [**The Odin Project**](https://theodinproject.com) and also for my ongoing Git-learning
 
-<<<<<<< HEAD
-I know exactly zero concerning CSS grid, for now
+So far, I haven't learned CSS grid yet.
 
-So I made this page strictly with flexbox (which still confuses me)
-=======
-This page was made strictly using flexbox. I think it turned out pretty awesome.
->>>>>>> refs/remotes/origin/main
+So this page was made strictly using flexbox. I think it turned out pretty awesome.
 
 (p.s. I had to google how to use the @media rule)
