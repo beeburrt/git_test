@@ -53,18 +53,6 @@ table {
   End of CSS reset
 ======================= */
 
-/* Colors and sizes reference: 
-     dark background:   #1f2937
-     header logo:       #f9faf8   24px
-     accent "green":    #6d747d
-     quote background:  #e5e7eb   36px
-     button "blue":     #3882f6   
-     link color:        #e5e7eb   18px
-     title color:       #f9faf8   48px
-     hero text:         #f9faf8   18px
-     random info header:#1f2937   36px
-
-           */
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -109,6 +97,11 @@ body {
 .link {
   display: flex;
   margin: 1rem;
+}
+
+.right {
+  display: flex;
+  justify-content: end;
 }
 
 .right,
@@ -168,10 +161,14 @@ body {
 /* this code alters layout for mobile sizes */
 
 @media (max-width: 750px) {
+  .header,
   .left,
-  .right {
+  .right,
+  .title {
     width: 100%;
+    justify-content: center;
   }
+  .list,
   .text {
     flex-direction: column;
   }
