@@ -79,71 +79,89 @@ body {
   color: white;
   background-color: #1f2937;
   display: flex;
-  padding: 22px 33px;
-  border: 2px solid black;
   flex-wrap: wrap;
 }
 
 .header {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em 15%;
 }
 
 .bike {
   width: 44px;
-  margin-right: auto;
-  border: 2px solid black;
+  margin-right: 1em;
+  flex-shrink: 0;
+}
+
+.nav {
+  align-self: center;
 }
 
 .list {
   display: flex;
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 1rem;
 }
 
 .link {
   display: flex;
-  margin: 11px;
-  align-items: flex-end;
-  border: 2px solid black;
+  margin: 1rem;
 }
+
+.right {
+  border: 2px solid green;
+  align-self: flex-end;
+}
+
+/* .left { */
+  /* width: 45%; */
+  /* border: 2px solid green; */
+/* } */
 
 .text {
   display: flex;
-  flex-wrap: wrap;
+  padding: 1em 15%;
   line-height: 1.5;
-  border: 2px solid black;
-  align-items: center;
-}
-
-.photo {
-  max-width: 50%;
-  margin: 44px;
+  border: 2px solid white;
+  flex-wrap: wrap;
 }
 
 .title {
   font-size: 55px;
+  text-align: center;
   text-transform: uppercase;
+  letter-spacing: .1rem;
+  word-spacing: 1rem;
+  line-height: 1.2;
   font-weight: 700;
+  padding: 1rem 0;
+  display: flex;
 }
 
 .words {
-  border: 2px solid black;
+  font-size: 1.3rem;
 }
 
 .chrome {
-  display: flex;
   max-width: 100%;
   border-radius: 22px;
+  padding-bottom: 1rem;
 }
 
 .button {
-  width: 8em;
+  width: 7em;
   color: white;
-  font-size: inherit;
   background-color: #3882f6;
+  font-size: 1em;
+  font-weight: 500;
+  text-shadow: 1px 1px black;
   padding: 8px;
-  border-radius: 6px;
-  margin: 22px;
+  border-radius: 8px;
+  margin: 1.5em auto;
   border: 2px solid black;
-  text-shadow: 1px 1px 2px black;
 }
 
 /* ======================
@@ -171,55 +189,56 @@ a:focus {
 }
 
 /* =====================
-    Card Section
+   Random Info Section
 ===================== */
 
 .cards {
   display: flex;
-  font-size: 33px;
-  font-weight: bold;
-  min-height: 388px;
-  width: 100%;
-  flex-flow: row wrap;
-  justify-content: center;
-  text-align: center;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
   line-height: 1.1;
+  gap: 2em;
 }
 
 .random {
-  padding: 44px;
-  display: flex;
+  padding: 1em 1em 0 1em;
+  font-size: 36px;
+  font-weight: 900;
   width: 100%;
-  justify-content: center;
+  letter-spacing: 1px;
+  text-align: center;
   text-transform: capitalize;
+  text-decoration: underline;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .card {
   background-color: white;
-  display: flex;
-  margin: 22px 22px;
+  margin: 2em auto 1em auto;
   max-width: 222px;
   height: 333px;
   border-radius: 33px;
-  flex: 1 0 100%;
-  align-items: center;
   box-shadow: 0 0 1rem rgba(0, 0, 0, .4);
-  justify-content: center;
-  border-collapse: collapse;
 }
 
 .card img {
-  width: 222px;
-  height: auto;
+  width: 100%;
   border-radius: 33px;
 }
 
 .card img:hover {
   color: green;
-  height: auto;
   width: 211px;
   border-radius: 33px;
+}
+
+.container {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  width: 233px;
+  margin: 0 auto;
 }
 
 /* =====================
@@ -228,10 +247,9 @@ a:focus {
 
 .quote {
   background-color: #e5e7eb;
-  height: 222px;
-  padding: 88px 0;
+  padding: 3em 0;
   font: italic 100 2.3em Roboto, sans-serif;
-  margin-top: 33px;
+  margin-top: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,8 +257,7 @@ a:focus {
 }
 
 blockquote {
-  padding: 0 33px;
-  max-width: 33rem;
+  max-width: 55%;
   margin: 0 auto;
 }
 
@@ -257,8 +274,8 @@ blockquote {
 
 .call {
   display: flex;
-  height: 18em;
-  text-shadow: 1px 1px 2px black;
+  height: 22em;
+  text-shadow: 1px 1px black;
   justify-content: center;
   align-items: center;
 }
@@ -267,43 +284,35 @@ blockquote {
   background: #3882f6;
   color: white;
   width: 75%;
-  padding: 1em 0 1em 1em;
+  padding: 1.5em;
+  border-radius: 3px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.why {
-  /* width: 60%; */
-}
-
 .its-time {
-  font-size: 2em;
+  font-size: 1.9em;
   font-weight: 700;
   text-transform: capitalize;
 }
 
 .sign-up {
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1.2;
-}
-
-.btn-div {
-  margin-right: 1em;
-  border: 1px solid #1f2937;
-
 }
 
 .btn {
   width: 7em;
   color: black;
   background-color: #e5e7eb;
-  font-size: inherit;
+  font-size: 1em;
   font-weight: 700;
   padding: 8px;
-  border-radius: 6px;
-  /* margin: 22px; */
-  border: 1px solid #1f2937;
+  border-radius: 8px;
+  margin: 1.5em;
+  border: 1px solid black;
 }
 
 /* =====================
