@@ -86,7 +86,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 1em 15%;
+  padding: 1em 10%;
 }
 
 .bike {
@@ -111,34 +111,35 @@ body {
   margin: 1rem;
 }
 
-.right {
-  border: 2px solid green;
-  align-self: flex-end;
+.right,
+.left {
+  width: 45%;
 }
 
-/* .left { */
-  /* width: 45%; */
-  /* border: 2px solid green; */
-/* } */
-
 .text {
+  min-height: 22rem;
   display: flex;
-  padding: 1em 15%;
+  width: 100%;
+  padding: 1em 10%;
   line-height: 1.5;
-  border: 2px solid white;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title {
   font-size: 55px;
-  text-align: center;
+  /* text-align: center; */
   text-transform: uppercase;
+  /* text-align: center; */
   letter-spacing: .1rem;
   word-spacing: 1rem;
   line-height: 1.2;
   font-weight: 700;
   padding: 1rem 0;
   display: flex;
+  justify-content: flex-start;
+
 }
 
 .words {
@@ -162,6 +163,26 @@ body {
   border-radius: 8px;
   margin: 1.5em auto;
   border: 2px solid black;
+}
+
+/* this code alters layout for mobile sizes */
+
+@media (max-width: 750px) {
+  .left,
+  .right {
+    width: 100%;
+  }
+  .text {
+    flex-direction: column;
+  }
+  .title,
+  .words {
+    text-align: center;
+  }
+  div.btn-a {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* ======================
