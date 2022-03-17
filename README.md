@@ -11,4 +11,4 @@ So far, I haven't learned CSS grid yet.
 
 So this page was made strictly using flexbox. I think it turned out pretty awesome.
 
-(p.s. I had to google how to use the @media rule)
+(p.s. I had to google how to use the @media rule and the lil JavaScript function)
